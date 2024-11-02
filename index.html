@@ -4,74 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta name="description" content="">
-    <title>Site Booster</title>
-
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
-        header #imagem-logotipo {
-            width: 370px;
-            margin-top: 5%;
-            animation-name: logotipo;
-            animation-duration: 5s;
-            animation-direction: alternate;
-            
-            animation-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
-        }
-
-        @keyframes logotipo {
-            from {
-                
-                transform: scale(0.001) rotate(100deg);
-                opacity: 0.5;
-                
-
-            }
-
-        }
-
-        header {
-
-            margin: 0;
-            padding: 10px 0px;
-            animation-name: corpo;
-            animation-duration: 10s;
-            animation-direction: alternate;
-        }
-
-        @keyframes corpo {
-
-            50% {
-                background-color: #000000;
-                color: rgb(255, 255, 255);
-                border-radius: 12px;
-                
-
-            }
-
-            100% {
-                background-color: #ffffff;
-                color: rgb(0, 0, 0);
-                border-radius: 12px;
-                
-
-            }
+    <link rel="stylesheet" href="assets.css/estilos.css">
+    <script src="https://kit.fontawesome.com/f962f4c5a7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
 
+    <meta name="description" content=" Crie sites que vendem! Desenvolvimento web profissional e campanhas de tráfego pago para impulsionar seu negócio.">
 
-        }
-    </style>
+
+    <title>Site Booster, desenvolvimento de sites, landing-page e gestão de tráfego pago.</title>
+
+
 </head>
 
-<body style="text-align: center; background-color: rgb(255, 255, 255);">
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#avaliacoes">Avaliações</a></li>
+        </ul>
+    </nav>
 
     <header>
-        <img id="imagem-logotipo" src="siteboosterlogotipo.png" alt="">
+        <section class="animation-txt">
+            <h4>Faça seu orçamento ainda hoje! 20% OFF</h4>
+        </section>
+       
+        <img id="imagem-logotipo" src="assets.css/image.css/siteboosterlogotipo02.png" alt="">
 
         <h1>Mais tráfego, mais leads, mais vendas</h1>
 
@@ -82,26 +42,116 @@
 
     </header>
 
-    <h1>Sobre Nós</h1>
+    <section id="btn-cta">
+        <button onclick="entrarEmContato()">Entrar em contato</button>
+        <h3>Invista em seu negócio e tenha resultados reais</h3>
+    </section>
 
-    <p>
-        Seu negócio online, decola aqui. Na SiteBooster, transformamos ideias em sites de alta performance. Crie uma
-        presença online poderosa e alcance seus objetivos com nossas soluções personalizadas de criação de sites,
-        landing pages e gestão de tráfego.
-    </p>
+    <section class="first-section">
 
+        <div class="image-txt-serv">
+            <img src="assets.css/image.css/computer.png" alt="">
+
+            <h2>Sites responsivos</h2>
+        </div>
+
+        <div class="image-txt-serv">
+            <img src="assets.css/image.css/landing-page.png" alt="">
+
+            <h2>Landing pages</h2>
+        </div>
+
+        <div class="image-txt-serv">
+            <img id="google-ads-img" src="assets.css/image.css/google-ads.png" alt="">
+            
+            <h2>Tráfego pago</h2>
+        </div>
+
+
+    </section>
+
+    <section id="btn-cta">
+        <button onclick="entrarEmContato()">Entrar em contato</button>
+        <h3>Invista em seu negócio e tenha resultados reais</h3>
+    </section>
+
+    <section class="second-section" id="sobre">
+
+        <h1>Sobre Nós</h1>
+
+        <p>
+            Seu negócio online, decola aqui. Na SiteBooster, transformamos ideias em sites de alta performance. Crie uma
+            presença online poderosa e alcance seus objetivos com nossas soluções personalizadas de criação de sites,
+            landing pages e gestão de tráfego.
+        </p>
+
+    </section>
+
+    <section id="btn-cta">
+        <button onclick="entrarEmContato()">Entrar em contato</button>
+        <h3>Invista em seu negócio e tenha resultados reais</h3>
+    </section>
+
+    <section class="feedback-section" id="avaliacoes">
+        <h2>Feedbacks de Clientes Satisfeitos</h2>
+        
+        <div class="feedback">
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <p>"A criação do meu site foi rápida e eficiente! Recebi muitos elogios!" - Maria S.</p>
+        </div>
+    
+        <div class="feedback">
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <p>"A landing page que criaram para meu negócio trouxe um aumento significativo nas vendas!" - João P.</p>
+        </div>
+    
+        <div class="feedback">
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <p>"O tráfego pago foi um ótimo investimento! Meus clientes chegaram mais rápido!" - Ana T.</p>
+        </div>
+    
+        <div class="feedback">
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <p>"Excelente atendimento e resultados. Recomendo!" - Carlos L.</p>
+        </div>
+        
+    </section>
+
+    <section class="redes-sociais-sitebooster" id="redes-sociais">
+        <i class="fa-brands fa-square-facebook"></i>
+        <i class="fa-brands fa-square-instagram"></i>
+        <i class="fa-brands fa-tiktok"></i>
+        <i class="fa-brands fa-square-whatsapp"></i>
+    </section>
 
     <footer>
-        <div class="contatos">
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-            </ul>
-        </div>
-        <a href="mailto:siteboostersolucoesdigitais@gmail.com">siteboostersolucoesdigitais@gmail.com</a>
-        <p>SiteBooster &copy;-2024</p>
+        <h6>&copy; 2024 Site Booster. Todos os direitos reservados.</h6>
     </footer>
 </body>
+<script src="carregarPaginas.js"></script>
 
 </html>

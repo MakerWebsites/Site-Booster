@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    text-align: center;
+    margin: 0px 3%;
+    font-family: "Roboto Slab", serif;
+
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgb(1, 1, 100),
+            rgb(1, 1, 75),
+            rgb(0, 0, 50),
+            rgb(1, 1, 25),
+            rgb(1, 1, 0));
+    color: white;
+}
+
+header {
+    padding-top: 45px;
+}
+
+header img {
+    margin-top: 10px;
+    width: 150px;
+}
+
+
+#btn-cta {
+    padding-top: 25px;
+
+}
+
+#btn-cta button {
+    padding: 1rem;
+    width: 13rem;
+    border-radius: 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    border: none;
+    color: white;
+    background-color: rgb(255, 0, 0);
+    box-shadow: 0px 0px 10px 1px black;
+}
+
+.image-txt-serv img {
+    width: 80%;
+    padding: 0px auto;
+    margin-top: 30px;
+    animation: imagensServicos 1ms linear;
+    animation-timeline: view();
+    animation-range: cover 0% cover 50%;
+
+
+}
+
+.image-txt-serv h2 {
+    animation: imagensServicos 1ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    animation-timeline: view();
+    animation-range: cover 0% cover 100%;
+}
+
+.image-txt-serv #google-ads-img {
+    width: 200px;
+}
+
+.second-section {
+    padding-top: 40px;
+}
+
+footer {
+
+    padding: 10%;
+}
+
+.feedback-section {
+    max-width: 600px;
+    margin: auto;
+    background: transparent;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.feedback {
+    margin: 15px 0;
+    padding: 10px;
+    border-left: 4px solid #f39c12;
+}
+
+.stars {
+    color: #f39c12;
+    /* Cor das estrelas */
+    margin-bottom: 5px;
+}
+
+h2 {
+    text-align: center;
+    color: #c4c4c4;
+}
+
+
+h4 {
+    z-index: 999;
+    right: 0;
+    top: 0;
+    width: 100%;
+    position: fixed;
+    background-color: red;
+    border-bottom: solid 2px black;
+    padding: 3px;
+    border-radius: 3px;
+    animation-name: sale;
+    animation-duration: 3s;
+    animation-timing-function: cubic-bezier(0.23, 1, 0.320, 1);
+    animation-iteration-count: infinite;
+}
+
+nav {
+    margin: 30px auto;
+}
+
+ul {
+    z-index: 999;
+    position: fixed;
+    gap: 20px;
+    display: flex;
+    list-style: none;
+    text-transform: uppercase;
+    padding: 10px;
+
+}
+
+a {
+    color: red;
+    font-weight: bolder;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.245);
+    padding: 4px;
+    border-radius: 4px;
+    letter-spacing: 1px;
+}
+ .fa-brands {
+    color: red;
+    
+    width: 10%;
+    font-size: 30px;
+}
+
+@keyframes sale {
+    from {
+        color: red;
+        background-color: red;
+    }
+}
+
+
+
+
+
+
+@keyframes imagensServicos {
+    from {
+        opacity: 0;
+
+    }
+
+    to {
+        opacity: 1;
+    }
+
+}
